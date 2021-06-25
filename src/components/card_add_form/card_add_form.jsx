@@ -3,7 +3,7 @@ import Button from "../button/button";
 import ImageFileInput from "../image_file_input/image_file_input";
 import styles from "./card_add_form.module.css";
 
-const CardAddForm = ({ onAdd }) => {
+const CardAddForm = ({ FileInput, onAdd }) => {
   const formRef = useRef();
 
   const nameRef = useRef();
@@ -79,7 +79,7 @@ const CardAddForm = ({ onAdd }) => {
         placeholder="Message"
       ></textarea>
       <div className={styles.fileInput}>
-        <ImageFileInput />
+        <FileInput />
       </div>
       <Button name="ADD" onClick={onSubmit} />
     </form>
