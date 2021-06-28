@@ -9,9 +9,10 @@ import ImageUploader from "./service/image_uploader";
 
 const authService = new AuthService();
 const imageUploader = new ImageUploader();
-const FileInput = (props) => {
-  <ImageFileInput {...props} imageUploader={imageUploader} />;
-};
+
+const FileInput = (props) => (
+  <ImageFileInput {...props} imageUploader={imageUploader} />
+);
 
 ReactDOM.render(
   <React.StrictMode>
