@@ -24,9 +24,9 @@ const ImageFileInput = ({ imageUploader, name, onFileChange }) => {
   };
 
   return (
-    <div class={styles.container}>
+    <div className={styles.container}>
       <input
-        class={styles.input}
+        className={styles.input}
         ref={inputRef}
         type="file"
         accept="image/*"
