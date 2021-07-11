@@ -37,7 +37,7 @@ const Login = ({ authService }) => {
               Google
             </button>
           </li>
-          <li className={styles.item}>
+          <li className={styles.witem}>
             <button className={styles.button} onClick={onLogin}>
               Github
             </button>
